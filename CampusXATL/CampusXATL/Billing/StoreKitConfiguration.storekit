@@ -1,0 +1,80 @@
+{
+  "identifier" : "com.campusxatl.storekit",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_timeRate" : "MONTHLY_RENEWAL_EVERY_30_MINUTES"
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "CampusXATL_Subscriptions",
+      "localizations" : [
+
+      ],
+      "name" : "CampusXATL Plans",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "campus_plus_monthly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Up to 15 listings, listing boosts, and priority placement.",
+              "displayName" : "Campus+",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.campusxatl.app.campusplus.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Campus+ Monthly",
+          "subscriptionGroupID" : "CampusXATL_Subscriptions",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "campus_pro_monthly",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited listings, unlimited boosts, featured badge, and analytics.",
+              "displayName" : "Campus Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.campusxatl.app.campuspro.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Campus Pro Monthly",
+          "subscriptionGroupID" : "CampusXATL_Subscriptions",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* CampusXATLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100001 /* CampusXATLApp.swift */; };
+		AA000002 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100002 /* AppState.swift */; };
+		AA000003 /* AppPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100003 /* AppPersistence.swift */; };
+		AA000010 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100010 /* Colors.swift */; };
+		AA000011 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100011 /* Typography.swift */; };
+		AA000012 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100012 /* Spacing.swift */; };
+		AA000013 /* CXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100013 /* CXButton.swift */; };
+		AA000014 /* CXCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100014 /* CXCard.swift */; };
+		AA000015 /* CXTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100015 /* CXTextField.swift */; };
+		AA000016 /* CXBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100016 /* CXBadge.swift */; };
+		AA000017 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100017 /* EmptyStateView.swift */; };
+		AA000018 /* ListingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100018 /* ListingCard.swift */; };
+		AA000019 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100019 /* AvatarView.swift */; };
+		AA000020 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100020 /* UserProfile.swift */; };
+		AA000021 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100021 /* Listing.swift */; };
+		AA000022 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100022 /* Conversation.swift */; };
+		AA000023 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100023 /* Message.swift */; };
+		AA000024 /* SavedListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100024 /* SavedListing.swift */; };
+		AA000025 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100025 /* AppSettings.swift */; };
+		AA000026 /* SubscriptionTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100026 /* SubscriptionTier.swift */; };
+		AA000030 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100030 /* AuthService.swift */; };
+		AA000031 /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100031 /* ListingService.swift */; };
+		AA000032 /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100032 /* MessagingService.swift */; };
+		AA000033 /* SavedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100033 /* SavedService.swift */; };
+		AA000040 /* AnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100040 /* AnalyticsProtocol.swift */; };
+		AA000041 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100041 /* AnalyticsEvent.swift */; };
+		AA000042 /* DebugAnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100042 /* DebugAnalyticsService.swift */; };
+		AA000043 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100043 /* AnalyticsService.swift */; };
+		AA000050 /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100050 /* EntitlementManager.swift */; };
+		AA000051 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100051 /* SubscriptionManager.swift */; };
+		AA000060 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100060 /* WelcomeView.swift */; };
+		AA000061 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100061 /* SignUpView.swift */; };
+		AA000062 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100062 /* SignInView.swift */; };
+		AA000063 /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100063 /* OnboardingFlowView.swift */; };
+		AA000064 /* ProfileSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100064 /* ProfileSetupView.swift */; };
+		AA000070 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100070 /* HomeView.swift */; };
+		AA000071 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100071 /* HomeViewModel.swift */; };
+		AA000072 /* CategoryBrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100072 /* CategoryBrowseView.swift */; };
+		AA000073 /* FeaturedSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100073 /* FeaturedSectionView.swift */; };
+		AA000080 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100080 /* SearchView.swift */; };
+		AA000081 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100081 /* SearchViewModel.swift */; };
+		AA000082 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100082 /* FilterView.swift */; };
+		AA000090 /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100090 /* ListingDetailView.swift */; };
+		AA000091 /* CreateListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100091 /* CreateListingView.swift */; };
+		AA000092 /* CreateListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100092 /* CreateListingViewModel.swift */; };
+		AA000093 /* EditListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100093 /* EditListingView.swift */; };
+		AA000094 /* ListingPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100094 /* ListingPreviewView.swift */; };
+		AA000095 /* MyListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100095 /* MyListingsView.swift */; };
+		AA000100 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100100 /* SavedView.swift */; };
+		AA000110 /* ConversationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100110 /* ConversationListView.swift */; };
+		AA000111 /* MessageThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100111 /* MessageThreadView.swift */; };
+		AA000112 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100112 /* MessageViewModel.swift */; };
+		AA000120 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100120 /* ProfileView.swift */; };
+		AA000121 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100121 /* EditProfileView.swift */; };
+		AA000122 /* SellerProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100122 /* SellerProfileView.swift */; };
+		AA000123 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100123 /* SettingsView.swift */; };
+		AA000130 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100130 /* PaywallView.swift */; };
+		AA000131 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100131 /* SubscriptionView.swift */; };
+		AA000140 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100140 /* MainTabView.swift */; };
+		AA000141 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA100141 /* RootView.swift */; };
+		AA000200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA100200 /* Assets.xcassets */; };
+		AA000201 /* StoreKitConfiguration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = AA100201 /* StoreKitConfiguration.storekit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA100001 /* CampusXATLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusXATLApp.swift; sourceTree = "<group>"; };
+		AA100002 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AA100003 /* AppPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPersistence.swift; sourceTree = "<group>"; };
+		AA100010 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AA100011 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		AA100012 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		AA100013 /* CXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXButton.swift; sourceTree = "<group>"; };
+		AA100014 /* CXCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXCard.swift; sourceTree = "<group>"; };
+		AA100015 /* CXTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXTextField.swift; sourceTree = "<group>"; };
+		AA100016 /* CXBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXBadge.swift; sourceTree = "<group>"; };
+		AA100017 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		AA100018 /* ListingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCard.swift; sourceTree = "<group>"; };
+		AA100019 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		AA100020 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AA100021 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		AA100022 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		AA100023 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AA100024 /* SavedListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListing.swift; sourceTree = "<group>"; };
+		AA100025 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		AA100026 /* SubscriptionTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTier.swift; sourceTree = "<group>"; };
+		AA100030 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AA100031 /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingService.swift; sourceTree = "<group>"; };
+		AA100032 /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
+		AA100033 /* SavedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedService.swift; sourceTree = "<group>"; };
+		AA100040 /* AnalyticsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsProtocol.swift; sourceTree = "<group>"; };
+		AA100041 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		AA100042 /* DebugAnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugAnalyticsService.swift; sourceTree = "<group>"; };
+		AA100043 /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		AA100050 /* EntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementManager.swift; sourceTree = "<group>"; };
+		AA100051 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		AA100060 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		AA100061 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AA100062 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		AA100063 /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		AA100064 /* ProfileSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupView.swift; sourceTree = "<group>"; };
+		AA100070 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA100071 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AA100072 /* CategoryBrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBrowseView.swift; sourceTree = "<group>"; };
+		AA100073 /* FeaturedSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedSectionView.swift; sourceTree = "<group>"; };
+		AA100080 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AA100081 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AA100082 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		AA100090 /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
+		AA100091 /* CreateListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateListingView.swift; sourceTree = "<group>"; };
+		AA100092 /* CreateListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateListingViewModel.swift; sourceTree = "<group>"; };
+		AA100093 /* EditListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListingView.swift; sourceTree = "<group>"; };
+		AA100094 /* ListingPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPreviewView.swift; sourceTree = "<group>"; };
+		AA100095 /* MyListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingsView.swift; sourceTree = "<group>"; };
+		AA100100 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		AA100110 /* ConversationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListView.swift; sourceTree = "<group>"; };
+		AA100111 /* MessageThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadView.swift; sourceTree = "<group>"; };
+		AA100112 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		AA100120 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AA100121 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		AA100122 /* SellerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerProfileView.swift; sourceTree = "<group>"; };
+		AA100123 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA100130 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		AA100131 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		AA100140 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		AA100141 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AA100200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA100201 /* StoreKitConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = StoreKitConfiguration.storekit; sourceTree = "<group>"; };
+		AA100202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA100203 /* CampusXATL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CampusXATL.entitlements; sourceTree = "<group>"; };
+		AAPROD001 /* CampusXATL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusXATL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AABUILD001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAGRP_ROOT /* / */ = {
+			isa = PBXGroup;
+			children = (
+				AAGRP_APP /* CampusXATL */,
+				AAGRP_PRODUCTS /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAGRP_PRODUCTS /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAPROD001 /* CampusXATL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAGRP_APP /* CampusXATL */ = {
+			isa = PBXGroup;
+			children = (
+				AAGRP_APPFOLDER /* App */,
+				AAGRP_DESIGNSYSTEM /* DesignSystem */,
+				AAGRP_MODELS /* Models */,
+				AAGRP_SERVICES /* Services */,
+				AAGRP_ANALYTICS /* Analytics */,
+				AAGRP_BILLING /* Billing */,
+				AAGRP_VIEWS /* Views */,
+				AA100200 /* Assets.xcassets */,
+				AA100202 /* Info.plist */,
+				AA100203 /* CampusXATL.entitlements */,
+			);
+			path = CampusXATL;
+			sourceTree = "<group>";
+		};
+		AAGRP_APPFOLDER /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA100001 /* CampusXATLApp.swift */,
+				AA100002 /* AppState.swift */,
+				AA100003 /* AppPersistence.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AAGRP_DESIGNSYSTEM /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				AA100010 /* Colors.swift */,
+				AA100011 /* Typography.swift */,
+				AA100012 /* Spacing.swift */,
+				AAGRP_COMPONENTS /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AAGRP_COMPONENTS /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA100013 /* CXButton.swift */,
+				AA100014 /* CXCard.swift */,
+				AA100015 /* CXTextField.swift */,
+				AA100016 /* CXBadge.swift */,
+				AA100017 /* EmptyStateView.swift */,
+				AA100018 /* ListingCard.swift */,
+				AA100019 /* AvatarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AAGRP_MODELS /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA100020 /* UserProfile.swift */,
+				AA100021 /* Listing.swift */,
+				AA100022 /* Conversation.swift */,
+				AA100023 /* Message.swift */,
+				AA100024 /* SavedListing.swift */,
+				AA100025 /* AppSettings.swift */,
+				AA100026 /* SubscriptionTier.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAGRP_SERVICES /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA100030 /* AuthService.swift */,
+				AA100031 /* ListingService.swift */,
+				AA100032 /* MessagingService.swift */,
+				AA100033 /* SavedService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AAGRP_ANALYTICS /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				AA100040 /* AnalyticsProtocol.swift */,
+				AA100041 /* AnalyticsEvent.swift */,
+				AA100042 /* DebugAnalyticsService.swift */,
+				AA100043 /* AnalyticsService.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		AAGRP_BILLING /* Billing */ = {
+			isa = PBXGroup;
+			children = (
+				AA100050 /* EntitlementManager.swift */,
+				AA100051 /* SubscriptionManager.swift */,
+				AA100201 /* StoreKitConfiguration.storekit */,
+			);
+			path = Billing;
+			sourceTree = "<group>";
+		};
+		AAGRP_VIEWS /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAGRP_ONBOARDING /* Onboarding */,
+				AAGRP_HOME /* Home */,
+				AAGRP_SEARCH /* Search */,
+				AAGRP_LISTINGS /* Listings */,
+				AAGRP_SAVED /* Saved */,
+				AAGRP_MESSAGING /* Messaging */,
+				AAGRP_PROFILE /* Profile */,
+				AAGRP_BILLING_VIEWS /* Billing */,
+				AA100140 /* MainTabView.swift */,
+				AA100141 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAGRP_ONBOARDING /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AA100060 /* WelcomeView.swift */,
+				AA100061 /* SignUpView.swift */,
+				AA100062 /* SignInView.swift */,
+				AA100063 /* OnboardingFlowView.swift */,
+				AA100064 /* ProfileSetupView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AAGRP_HOME /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA100070 /* HomeView.swift */,
+				AA100071 /* HomeViewModel.swift */,
+				AA100072 /* CategoryBrowseView.swift */,
+				AA100073 /* FeaturedSectionView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AAGRP_SEARCH /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AA100080 /* SearchView.swift */,
+				AA100081 /* SearchViewModel.swift */,
+				AA100082 /* FilterView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AAGRP_LISTINGS /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				AA100090 /* ListingDetailView.swift */,
+				AA100091 /* CreateListingView.swift */,
+				AA100092 /* CreateListingViewModel.swift */,
+				AA100093 /* EditListingView.swift */,
+				AA100094 /* ListingPreviewView.swift */,
+				AA100095 /* MyListingsView.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		AAGRP_SAVED /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				AA100100 /* SavedView.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		AAGRP_MESSAGING /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				AA100110 /* ConversationListView.swift */,
+				AA100111 /* MessageThreadView.swift */,
+				AA100112 /* MessageViewModel.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		AAGRP_PROFILE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AA100120 /* ProfileView.swift */,
+				AA100121 /* EditProfileView.swift */,
+				AA100122 /* SellerProfileView.swift */,
+				AA100123 /* SettingsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AAGRP_BILLING_VIEWS /* Billing */ = {
+			isa = PBXGroup;
+			children = (
+				AA100130 /* PaywallView.swift */,
+				AA100131 /* SubscriptionView.swift */,
+			);
+			path = Billing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AATARGET001 /* CampusXATL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AACFGLIST001 /* Build configuration list for PBXNativeTarget "CampusXATL" */;
+			buildPhases = (
+				AABUILD_SOURCES /* Sources */,
+				AABUILD001 /* Frameworks */,
+				AABUILD_RESOURCES /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampusXATL;
+			productName = CampusXATL;
+			productReference = AAPROD001 /* CampusXATL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAPROJECT001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AATARGET001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AACFGLIST000 /* Build configuration list for PBXProject "CampusXATL" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAGRP_ROOT;
+			productRefGroup = AAGRP_PRODUCTS /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AATARGET001 /* CampusXATL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABUILD_RESOURCES /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000200 /* Assets.xcassets in Resources */,
+				AA000201 /* StoreKitConfiguration.storekit in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AABUILD_SOURCES /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* CampusXATLApp.swift in Sources */,
+				AA000002 /* AppState.swift in Sources */,
+				AA000003 /* AppPersistence.swift in Sources */,
+				AA000010 /* Colors.swift in Sources */,
+				AA000011 /* Typography.swift in Sources */,
+				AA000012 /* Spacing.swift in Sources */,
+				AA000013 /* CXButton.swift in Sources */,
+				AA000014 /* CXCard.swift in Sources */,
+				AA000015 /* CXTextField.swift in Sources */,
+				AA000016 /* CXBadge.swift in Sources */,
+				AA000017 /* EmptyStateView.swift in Sources */,
+				AA000018 /* ListingCard.swift in Sources */,
+				AA000019 /* AvatarView.swift in Sources */,
+				AA000020 /* UserProfile.swift in Sources */,
+				AA000021 /* Listing.swift in Sources */,
+				AA000022 /* Conversation.swift in Sources */,
+				AA000023 /* Message.swift in Sources */,
+				AA000024 /* SavedListing.swift in Sources */,
+				AA000025 /* AppSettings.swift in Sources */,
+				AA000026 /* SubscriptionTier.swift in Sources */,
+				AA000030 /* AuthService.swift in Sources */,
+				AA000031 /* ListingService.swift in Sources */,
+				AA000032 /* MessagingService.swift in Sources */,
+				AA000033 /* SavedService.swift in Sources */,
+				AA000040 /* AnalyticsProtocol.swift in Sources */,
+				AA000041 /* AnalyticsEvent.swift in Sources */,
+				AA000042 /* DebugAnalyticsService.swift in Sources */,
+				AA000043 /* AnalyticsService.swift in Sources */,
+				AA000050 /* EntitlementManager.swift in Sources */,
+				AA000051 /* SubscriptionManager.swift in Sources */,
+				AA000060 /* WelcomeView.swift in Sources */,
+				AA000061 /* SignUpView.swift in Sources */,
+				AA000062 /* SignInView.swift in Sources */,
+				AA000063 /* OnboardingFlowView.swift in Sources */,
+				AA000064 /* ProfileSetupView.swift in Sources */,
+				AA000070 /* HomeView.swift in Sources */,
+				AA000071 /* HomeViewModel.swift in Sources */,
+				AA000072 /* CategoryBrowseView.swift in Sources */,
+				AA000073 /* FeaturedSectionView.swift in Sources */,
+				AA000080 /* SearchView.swift in Sources */,
+				AA000081 /* SearchViewModel.swift in Sources */,
+				AA000082 /* FilterView.swift in Sources */,
+				AA000090 /* ListingDetailView.swift in Sources */,
+				AA000091 /* CreateListingView.swift in Sources */,
+				AA000092 /* CreateListingViewModel.swift in Sources */,
+				AA000093 /* EditListingView.swift in Sources */,
+				AA000094 /* ListingPreviewView.swift in Sources */,
+				AA000095 /* MyListingsView.swift in Sources */,
+				AA000100 /* SavedView.swift in Sources */,
+				AA000110 /* ConversationListView.swift in Sources */,
+				AA000111 /* MessageThreadView.swift in Sources */,
+				AA000112 /* MessageViewModel.swift in Sources */,
+				AA000120 /* ProfileView.swift in Sources */,
+				AA000121 /* EditProfileView.swift in Sources */,
+				AA000122 /* SellerProfileView.swift in Sources */,
+				AA000123 /* SettingsView.swift in Sources */,
+				AA000130 /* PaywallView.swift in Sources */,
+				AA000131 /* SubscriptionView.swift in Sources */,
+				AA000140 /* MainTabView.swift in Sources */,
+				AA000141 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AACFG_DEBUG_PROJ /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AACFG_RELEASE_PROJ /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AACFG_DEBUG_TARGET /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CampusXATL/CampusXATL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CampusXATL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campusxatl.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AACFG_RELEASE_TARGET /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CampusXATL/CampusXATL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CampusXATL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campusxatl.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AACFGLIST000 /* Build configuration list for PBXProject "CampusXATL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFG_DEBUG_PROJ /* Debug */,
+				AACFG_RELEASE_PROJ /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AACFGLIST001 /* Build configuration list for PBXNativeTarget "CampusXATL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AACFG_DEBUG_TARGET /* Debug */,
+				AACFG_RELEASE_TARGET /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AAPROJECT001 /* Project object */;
+}
