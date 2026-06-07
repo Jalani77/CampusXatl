@@ -70,7 +70,7 @@ struct ListingDetailView: View {
                             CXBadge(text: condition.rawValue, color: Color.cxSurface, textColor: Color.cxSecondary)
                         }
                         if !listing.campusArea.isEmpty {
-                            CXBadge(text: listing.campusArea, icon: "mappin", color: Color.cxSurface, textColor: Color.cxSecondary)
+                            CXBadge(text: listing.campusArea, color: Color.cxSurface, textColor: Color.cxSecondary, icon: "mappin")
                         }
                     }
 

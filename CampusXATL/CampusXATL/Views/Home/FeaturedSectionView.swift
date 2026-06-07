@@ -15,7 +15,7 @@ struct FeaturedSectionView: View {
                 EmptyStateView(
                     systemImage: "tag",
                     title: "No listings yet",
-                    body: "Be the first to post something for sale on your campus."
+                    message: "Be the first to post something for sale on your campus."
                 )
                 .frame(height: 200)
             } else {

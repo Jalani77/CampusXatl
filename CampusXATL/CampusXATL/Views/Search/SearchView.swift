@@ -53,7 +53,7 @@ struct SearchView: View {
                         EmptyStateView(
                             systemImage: "magnifyingglass",
                             title: "Search the marketplace",
-                            body: "Find textbooks, electronics, services, and more from students at your campus."
+                            message: "Find textbooks, electronics, services, and more from students at your campus."
                         )
                     } else {
                         List {
@@ -86,7 +86,7 @@ struct SearchView: View {
                         EmptyStateView(
                             systemImage: "magnifyingglass",
                             title: "No results",
-                            body: "Try a different search term or adjust your filters.",
+                            message: "Try a different search term or adjust your filters.",
                             ctaTitle: viewModel.hasFilters ? "Clear Filters" : nil,
                             ctaAction: viewModel.hasFilters ? { viewModel.clearFilters() } : nil
                         )

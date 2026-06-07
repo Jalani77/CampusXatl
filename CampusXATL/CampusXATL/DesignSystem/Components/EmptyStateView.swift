@@ -3,7 +3,7 @@ import SwiftUI
 struct EmptyStateView: View {
     let systemImage: String
     let title: String
-    let body: String
+    let message: String
     var ctaTitle: String? = nil
     var ctaAction: (() -> Void)? = nil
 
@@ -19,7 +19,7 @@ struct EmptyStateView: View {
                     .foregroundStyle(Color.cxPrimary)
                     .multilineTextAlignment(.center)
 
-                Text(body)
+                Text(message)
                     .font(.cxBody)
                     .foregroundStyle(Color.cxSecondary)
                     .multilineTextAlignment(.center)

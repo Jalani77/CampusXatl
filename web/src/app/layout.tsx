@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: "CampusXATL — Your Campus Marketplace",
@@ -17,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full scroll-smooth">
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" className="h-full scroll-smooth">
+        <body className="min-h-full flex flex-col antialiased">{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }

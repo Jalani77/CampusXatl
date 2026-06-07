@@ -100,7 +100,7 @@ struct ProfileView: View {
                 EmptyStateView(
                     systemImage: "person.circle",
                     title: "Not signed in",
-                    body: "Sign in to view your profile and manage listings."
+                    message: "Sign in to view your profile and manage listings."
                 )
                 .navigationTitle("Profile")
             }

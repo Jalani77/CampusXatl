@@ -150,20 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAGRP_ROOT /* / */ = {
+		AAGRP_ANALYTICS /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				AAGRP_APP /* CampusXATL */,
-				AAGRP_PRODUCTS /* Products */,
+				AA100040 /* AnalyticsProtocol.swift */,
+				AA100041 /* AnalyticsEvent.swift */,
+				AA100042 /* DebugAnalyticsService.swift */,
+				AA100043 /* AnalyticsService.swift */,
 			);
-			sourceTree = "<group>";
-		};
-		AAGRP_PRODUCTS /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AAPROD001 /* CampusXATL.app */,
-			);
-			name = Products;
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		AAGRP_APP /* CampusXATL */ = {
@@ -193,15 +188,23 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		AAGRP_DESIGNSYSTEM /* DesignSystem */ = {
+		AAGRP_BILLING /* Billing */ = {
 			isa = PBXGroup;
 			children = (
-				AA100010 /* Colors.swift */,
-				AA100011 /* Typography.swift */,
-				AA100012 /* Spacing.swift */,
-				AAGRP_COMPONENTS /* Components */,
+				AA100050 /* EntitlementManager.swift */,
+				AA100051 /* SubscriptionManager.swift */,
+				AA100201 /* StoreKitConfiguration.storekit */,
 			);
-			path = DesignSystem;
+			path = Billing;
+			sourceTree = "<group>";
+		};
+		AAGRP_BILLING_VIEWS /* Billing */ = {
+			isa = PBXGroup;
+			children = (
+				AA100130 /* PaywallView.swift */,
+				AA100131 /* SubscriptionView.swift */,
+			);
+			path = Billing;
 			sourceTree = "<group>";
 		};
 		AAGRP_COMPONENTS /* Components */ = {
@@ -218,6 +221,51 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		AAGRP_DESIGNSYSTEM /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				AA100010 /* Colors.swift */,
+				AA100011 /* Typography.swift */,
+				AA100012 /* Spacing.swift */,
+				AAGRP_COMPONENTS /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AAGRP_HOME /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA100070 /* HomeView.swift */,
+				AA100071 /* HomeViewModel.swift */,
+				AA100072 /* CategoryBrowseView.swift */,
+				AA100073 /* FeaturedSectionView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AAGRP_LISTINGS /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				AA100090 /* ListingDetailView.swift */,
+				AA100091 /* CreateListingView.swift */,
+				AA100092 /* CreateListingViewModel.swift */,
+				AA100093 /* EditListingView.swift */,
+				AA100094 /* ListingPreviewView.swift */,
+				AA100095 /* MyListingsView.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		AAGRP_MESSAGING /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				AA100110 /* ConversationListView.swift */,
+				AA100111 /* MessageThreadView.swift */,
+				AA100112 /* MessageViewModel.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
 		AAGRP_MODELS /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +280,63 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AAGRP_ONBOARDING /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AA100060 /* WelcomeView.swift */,
+				AA100061 /* SignUpView.swift */,
+				AA100062 /* SignInView.swift */,
+				AA100063 /* OnboardingFlowView.swift */,
+				AA100064 /* ProfileSetupView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AAGRP_PRODUCTS /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAPROD001 /* CampusXATL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAGRP_PROFILE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AA100120 /* ProfileView.swift */,
+				AA100121 /* EditProfileView.swift */,
+				AA100122 /* SellerProfileView.swift */,
+				AA100123 /* SettingsView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AAGRP_ROOT = {
+			isa = PBXGroup;
+			children = (
+				AAGRP_APP /* CampusXATL */,
+				AAGRP_PRODUCTS /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAGRP_SAVED /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				AA100100 /* SavedView.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		AAGRP_SEARCH /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AA100080 /* SearchView.swift */,
+				AA100081 /* SearchViewModel.swift */,
+				AA100082 /* FilterView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		AAGRP_SERVICES /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,27 +346,6 @@
 				AA100033 /* SavedService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		AAGRP_ANALYTICS /* Analytics */ = {
-			isa = PBXGroup;
-			children = (
-				AA100040 /* AnalyticsProtocol.swift */,
-				AA100041 /* AnalyticsEvent.swift */,
-				AA100042 /* DebugAnalyticsService.swift */,
-				AA100043 /* AnalyticsService.swift */,
-			);
-			path = Analytics;
-			sourceTree = "<group>";
-		};
-		AAGRP_BILLING /* Billing */ = {
-			isa = PBXGroup;
-			children = (
-				AA100050 /* EntitlementManager.swift */,
-				AA100051 /* SubscriptionManager.swift */,
-				AA100201 /* StoreKitConfiguration.storekit */,
-			);
-			path = Billing;
 			sourceTree = "<group>";
 		};
 		AAGRP_VIEWS /* Views */ = {
@@ -279,90 +363,6 @@
 				AA100141 /* RootView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		AAGRP_ONBOARDING /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				AA100060 /* WelcomeView.swift */,
-				AA100061 /* SignUpView.swift */,
-				AA100062 /* SignInView.swift */,
-				AA100063 /* OnboardingFlowView.swift */,
-				AA100064 /* ProfileSetupView.swift */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		AAGRP_HOME /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				AA100070 /* HomeView.swift */,
-				AA100071 /* HomeViewModel.swift */,
-				AA100072 /* CategoryBrowseView.swift */,
-				AA100073 /* FeaturedSectionView.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		AAGRP_SEARCH /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				AA100080 /* SearchView.swift */,
-				AA100081 /* SearchViewModel.swift */,
-				AA100082 /* FilterView.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		AAGRP_LISTINGS /* Listings */ = {
-			isa = PBXGroup;
-			children = (
-				AA100090 /* ListingDetailView.swift */,
-				AA100091 /* CreateListingView.swift */,
-				AA100092 /* CreateListingViewModel.swift */,
-				AA100093 /* EditListingView.swift */,
-				AA100094 /* ListingPreviewView.swift */,
-				AA100095 /* MyListingsView.swift */,
-			);
-			path = Listings;
-			sourceTree = "<group>";
-		};
-		AAGRP_SAVED /* Saved */ = {
-			isa = PBXGroup;
-			children = (
-				AA100100 /* SavedView.swift */,
-			);
-			path = Saved;
-			sourceTree = "<group>";
-		};
-		AAGRP_MESSAGING /* Messaging */ = {
-			isa = PBXGroup;
-			children = (
-				AA100110 /* ConversationListView.swift */,
-				AA100111 /* MessageThreadView.swift */,
-				AA100112 /* MessageViewModel.swift */,
-			);
-			path = Messaging;
-			sourceTree = "<group>";
-		};
-		AAGRP_PROFILE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				AA100120 /* ProfileView.swift */,
-				AA100121 /* EditProfileView.swift */,
-				AA100122 /* SellerProfileView.swift */,
-				AA100123 /* SettingsView.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		AAGRP_BILLING_VIEWS /* Billing */ = {
-			isa = PBXGroup;
-			children = (
-				AA100130 /* PaywallView.swift */,
-				AA100131 /* SubscriptionView.swift */,
-			);
-			path = Billing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,6 +561,31 @@
 			};
 			name = Debug;
 		};
+		AACFG_DEBUG_TARGET /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CampusXATL/CampusXATL.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4CHFR3VWH6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CampusXATL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.campusxatl.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
 		AACFG_RELEASE_PROJ /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,31 +640,6 @@
 			};
 			name = Release;
 		};
-		AACFG_DEBUG_TARGET /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CampusXATL/CampusXATL.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = CampusXATL/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.campusxatl.app;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
 		AACFG_RELEASE_TARGET /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -648,7 +648,7 @@
 				CODE_SIGN_ENTITLEMENTS = CampusXATL/CampusXATL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4CHFR3VWH6;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = CampusXATL/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -687,7 +687,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = AAPROJECT001 /* Project object */;
 }

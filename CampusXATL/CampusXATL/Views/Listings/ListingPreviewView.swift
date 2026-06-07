@@ -55,7 +55,7 @@ struct ListingPreviewView: View {
                             CXBadge(text: viewModel.condition.rawValue, color: Color.cxSurface, textColor: Color.cxSecondary)
                         }
                         if !viewModel.campusArea.isEmpty {
-                            CXBadge(text: viewModel.campusArea, icon: "mappin", color: Color.cxSurface, textColor: Color.cxSecondary)
+                            CXBadge(text: viewModel.campusArea, color: Color.cxSurface, textColor: Color.cxSecondary, icon: "mappin")
                         }
                     }
 

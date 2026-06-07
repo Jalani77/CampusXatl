@@ -24,7 +24,7 @@ struct SellerProfileView: View {
                     EmptyStateView(
                         systemImage: "tag",
                         title: "No active listings",
-                        body: "This seller has no active listings right now."
+                        message: "This seller has no active listings right now."
                     )
                     .frame(height: 200)
                 } else {

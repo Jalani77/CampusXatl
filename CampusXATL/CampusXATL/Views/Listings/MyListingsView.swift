@@ -15,7 +15,7 @@ struct MyListingsView: View {
                 EmptyStateView(
                     systemImage: "tag",
                     title: "No listings yet",
-                    body: "Your active listings will appear here."
+                    message: "Your active listings will appear here."
                 )
             } else {
                 List {

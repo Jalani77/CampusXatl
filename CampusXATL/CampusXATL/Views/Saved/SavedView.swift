@@ -14,7 +14,7 @@ struct SavedView: View {
                     EmptyStateView(
                         systemImage: "bookmark",
                         title: "No saved listings",
-                        body: "Tap the bookmark on any listing to save it here for later."
+                        message: "Tap the bookmark on any listing to save it here for later."
                     )
                 } else {
                     ScrollView {

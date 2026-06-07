@@ -13,7 +13,7 @@ struct ConversationListView: View {
                     EmptyStateView(
                         systemImage: "message",
                         title: "No messages yet",
-                        body: "When you message a seller or someone contacts you, conversations will appear here."
+                        message: "When you message a seller or someone contacts you, conversations will appear here."
                     )
                 } else {
                     List(conversations) { conversation in

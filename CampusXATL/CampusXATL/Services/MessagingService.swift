@@ -16,8 +16,9 @@ final class MessagingService: ObservableObject {
     ) -> Conversation? {
         guard let context = modelContext else { return nil }
         // Check for existing conversation
+        let listingID = listing.id
         let descriptor = FetchDescriptor<Conversation>(
-            predicate: #Predicate { $0.listingID == listing.id && $0.buyerID == buyerID }
+            predicate: #Predicate { $0.listingID == listingID && $0.buyerID == buyerID }
         )
         if let existing = try? context.fetch(descriptor).first {
             return existing
@@ -74,8 +75,9 @@ final class MessagingService: ObservableObject {
         guard let context = modelContext else { return }
         conversation.unreadCount = 0
         // Mark messages read
+        let targetID: UUID = conversation.id
         let descriptor = FetchDescriptor<Message>(
-            predicate: #Predicate { $0.conversationID == conversation.id && $0.isRead == false }
+            predicate: #Predicate<Message> { $0.conversationID == targetID && $0.isRead == false }
         )
         if let msgs = try? context.fetch(descriptor) {
             msgs.forEach { $0.isRead = true }
